@@ -13,7 +13,10 @@ const Slideshow = () => {
               Los mas pedidos
             </h4>
             <NavLink to="/faq">
-              <button className="faq"> FAQ</button>
+              <button className="md: bg-black text-white m-20 rounded-md p-3">
+                {" "}
+                FAQ
+              </button>
             </NavLink>
           </div>
         </div>

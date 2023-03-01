@@ -1,7 +1,10 @@
 .input{
     width: 50%;
+    background-color: beige;
     border-radius: 5px;
-    color: white;
+    border-width: 2px;
+    border-color: black;
+    color: black;
 }
 .templateContainer{
     margin: 5% 0;

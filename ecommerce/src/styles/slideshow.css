@@ -13,11 +13,13 @@ h4{
     margin-top: 1rem;
     display: flex;
     color: black;
+    
 }
 @media (max-width: 715px) {
     .cards1 {
       flex-direction: column;
     }
+    
   }
 
 .faq {
@@ -26,8 +28,9 @@ h4{
     margin: 5rem;
     border-radius: 5px;
     padding: 10px;
-    
 }
+
 .row {
     display: flex;
 }
+
