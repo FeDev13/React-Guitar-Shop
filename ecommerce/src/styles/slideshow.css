@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4{
+    margin: 4rem;
+    color: black;
+}
+
+.cards1 {
+    margin-top: 1rem;
+    display: flex;
+    color: black;
+}
+@media (max-width: 715px) {
+    .cards1 {
+      flex-direction: column;
+    }
+  }
+
+.faq {
+    background-color: black;
+    color: white;
+    margin: 5rem;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.row {
+    display: flex;
+}

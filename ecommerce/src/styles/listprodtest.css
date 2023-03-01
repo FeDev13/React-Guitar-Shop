@@ -1,0 +1,13 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    margin-top: 3rem;
+}
+.card {
+    height: 90%;
+    width: 50%;
+    margin-top: 2rem;
+}
+h1{
+    text-align: center;
+}

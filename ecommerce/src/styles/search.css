@@ -1,0 +1,45 @@
+.input{
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+}
+.templateContainer{
+    margin: 5% 0;
+    color: black;
+}
+.templateContainer > .searchInput_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.templateContainer > .searchInput_Container input{
+    width: 50%;
+    padding: 10px;
+    outline: none;
+}
+.templateContainer .template_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.templateContainer .template_Container .template{
+    background-color: white;
+    margin: 30px;
+    padding: 0px 20px;
+    
+}
+.templateContainer .template_Container .template img{
+    height: 250px;
+}
+.detail{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 3px;
+    margin-top: 2rem;
+}

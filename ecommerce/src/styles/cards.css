@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    
+}
+
+.cards{
+    margin-left: 4rem;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+  
+}
+.cards:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.image_box img{
+    width: auto;
+    height: 300px;
+}
+.details p:nth-child(1){
+    font-weight: bold;
+}
+.details p:nth-child(2){
+    color: grey;
+    font-size: 0.8rem;
+}
+.details p:nth-child(3){
+    font-weight: bold;
+    color: grey;
+}
+.details button{
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: #ff661a;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+}
