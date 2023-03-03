@@ -24,8 +24,8 @@ A JS fullstack app project that simulates a real Guitar Shop using MERN stack
 
 - Creating and verifing an account.
 - Search products
-- Buy Products
--
+- Buy products
+
 
 
 ### Redux
