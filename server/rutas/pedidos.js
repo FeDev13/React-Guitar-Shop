@@ -1,14 +1,14 @@
-const Order = require("../modelos/pedidos");
+/* const Order = require("../modelos/pedidos");
 const express = require("express");
 const Orders = require("../modelos/pedidos");
-const router = express.Router();
+const router = express.Router(); */
 
 /*crea pedido*/
 
-router.post("/pedido", async (req, resp) => {
+/* router.post("/pedido", async (req, resp) => {
   const { title, stock, image, category } = req.body;
   const nuevoPedido = await Orders.create({ title, stock, image, category });
   resp.json(nuevoPedido);
-});
+}); */
 
-module.exports = router;
+/* module.exports = router; */

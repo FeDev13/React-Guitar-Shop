@@ -7,8 +7,8 @@ require("dotenv/config");
 const bodyParser = require("body-parser");
 const productRoute = require("./rutas/productos"); //importa la ruta de productos
 const useRoute = require("./rutas/users");
-const orderRoute = require("./rutas/pedidos");
-const db = require("./config/mysqlConfig");
+/* const orderRoute = require("./rutas/pedidos"); */
+/* const db = require("./config/mysqlConfig"); */
 const authRoute = require("./rutas/authlogin");
 
 //middleware
@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(cors({ origin: true }));
 app.use("/productos", productRoute); //uso la variable que tiene la ruta guardada
 app.use("/users", useRoute);
-app.use("/pedidos", orderRoute);
+/* app.use("/pedidos", orderRoute); */
 app.use("/auth", authRoute);
 
 //test

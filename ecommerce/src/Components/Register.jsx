@@ -71,9 +71,7 @@ export const Register = () => {
                   value={data.firstName}
                   type="text"
                   name="firstName"
-                  className="
-
-            w-full
+                  className=" w-full
             text-white
             block px-16 py-2 mt-2
             border-gray-300
@@ -82,8 +80,7 @@ export const Register = () => {
             focus:border-indigo-300
             focus:ring
             focus:ring-indigo-200
-            focus:ring-opacity-50
-          "
+            focus:ring-opacity-50 bg-black"
                   placeholder=""
                 />
               </label>
@@ -109,6 +106,7 @@ export const Register = () => {
             focus:ring
             focus:ring-indigo-200
             focus:ring-opacity-50
+            bg-black
           "
                   placeholder=""
                 />
@@ -135,6 +133,7 @@ export const Register = () => {
             focus:ring
             focus:ring-indigo-200
             focus:ring-opacity-50
+            bg-black
           "
                   placeholder=""
                 />
@@ -161,6 +160,7 @@ export const Register = () => {
             focus:ring
             focus:ring-indigo-200
             focus:ring-opacity-50
+            bg-black
           "
                   placeholder=""
                 />

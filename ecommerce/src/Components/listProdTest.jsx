@@ -3,12 +3,15 @@ import { useState } from "react";
 import Navbar from "./NavBar";
 import { CartContext } from "../Contexts/Context";
 import Axios from "axios";
-import listprodtest from "../styles/listprodtest.css";
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 
 const ListProdTest = () => {
   const [data, setdata] = useState([]);
+
+  const mostrarCompra = () => {
+    Swal.fire({ icon: "warning", title: "Producto agregado" });
+  };
+
   const fetchData = async () => {
     const response = await Axios.get(
       "http://localhost:3001/productos/guitarras"
@@ -23,9 +26,7 @@ const ListProdTest = () => {
   const Globalstate = useContext(CartContext);
   const dispatch = Globalstate.dispatch;
   console.log(Globalstate);
-  const mostrarCompra = () => {
-    Swal.fire({ icon: "warning", title: "Producto agregado" });
-  };
+
   return (
     <>
       <Navbar />
@@ -34,15 +35,17 @@ const ListProdTest = () => {
         {data.map((item, index) => {
           item.quantity = 1;
           return (
-            <div className="card" key={index}>
-              <img src={item.imagen} alt="" />
+            <div className=" mt-8 w-1/2 h-[90%]" key={index}>
+              <img src={item.imagen} alt="" className=" w-full h-auto" />
               <p>{item.nombre}</p>
               <h3>$. {item.precio}</h3>
               <button
-                className="bg-orange-600 hover:bg-black-700 text-white font-bold py-2 px-4 rounded"
-                onClick={() => dispatch({ type: "ADD", payload: item })}
+                className="bg-orange-600 text-white font-bold py-2 px-4 rounded"
+                onClick={() => {
+                  dispatch({ type: "ADD", payload: item });
+                  mostrarCompra();
+                }}
               >
-                {/* {mostrarCompra()} */}
                 Agregar al carrito
               </button>
             </div>
